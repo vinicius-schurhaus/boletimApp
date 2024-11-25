@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisciplinaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#6b3fa0"
+        android:text="Disciplinas"
+        android:gravity="center"
+        android:layout_marginTop="40sp"/>
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:textSize="18dp"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:id="@+id/edit_nomeDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nome da Disciplina"
+        android:gravity="left"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_Professor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Professor"
+        android:gravity="left"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:paddingVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button_insert"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Inserir"
+            android:background="@android:drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:background="@android:drawable/btn_default"/>
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:background="@android:drawable/btn_default"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:paddingVertical="5dp"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
